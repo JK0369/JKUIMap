@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4A22B98A2459E6A500352556 /* JKUIMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A22B9882459E6A500352556 /* JKUIMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A22B9912459E6B300352556 /* UIMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22B9902459E6B300352556 /* UIMapView.swift */; };
+		4AC30677245AC9A900F1E4B8 /* UIMapViewUpper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC30676245AC9A900F1E4B8 /* UIMapViewUpper.swift */; };
+		4AC30679245ACA0000F1E4B8 /* UIMapViewBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC30678245ACA0000F1E4B8 /* UIMapViewBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A22B9852459E6A500352556 /* JKUIMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKUIMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A22B9882459E6A500352556 /* JKUIMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKUIMap.h; sourceTree = "<group>"; };
 		4A22B9892459E6A500352556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A22B9902459E6B300352556 /* UIMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapView.swift; sourceTree = "<group>"; };
+		4AC30676245AC9A900F1E4B8 /* UIMapViewUpper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapViewUpper.swift; sourceTree = "<group>"; };
+		4AC30678245ACA0000F1E4B8 /* UIMapViewBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapViewBottom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				4A22B9882459E6A500352556 /* JKUIMap.h */,
-				4A22B9902459E6B300352556 /* UIMapView.swift */,
+				4AC30676245AC9A900F1E4B8 /* UIMapViewUpper.swift */,
+				4AC30678245ACA0000F1E4B8 /* UIMapViewBottom.swift */,
 				4A22B9892459E6A500352556 /* Info.plist */,
 			);
 			path = JKUIMap;
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A22B9912459E6B300352556 /* UIMapView.swift in Sources */,
+				4AC30677245AC9A900F1E4B8 /* UIMapViewUpper.swift in Sources */,
+				4AC30679245ACA0000F1E4B8 /* UIMapViewBottom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

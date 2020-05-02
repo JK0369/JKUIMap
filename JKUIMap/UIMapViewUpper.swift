@@ -7,12 +7,11 @@
 //
 
 import UIKit
-open class UIMapView: UIControl {
-    
+
+open class UIMapViewUpper: UIControl {
     public var sideBtn: UIButton!
     public var menuBtn: UIButton!
     public var segFlow: UISegmentedControl!
-    public var segMap: UISegmentedControl!
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -36,7 +35,7 @@ open class UIMapView: UIControl {
         sideBtn.setImage(.actions, for: .normal)
         addSubview(sideBtn)
         sideBtn.anchor(top: topAnchor, right: nil, bottom: nil, left: leftAnchor,
-                       padding: .init(top: interval*1.5, left: interval, bottom: 0, right: 0),
+                       padding: .init(top: interval, left: interval, bottom: 0, right: 0),
                        size: .init(width: 20, height: 20))
         
         menuBtn = UIButton()
@@ -47,24 +46,18 @@ open class UIMapView: UIControl {
                        size: .init(width: 20, height: 20))
         
         segFlow = UISegmentedControl(items: ["start", "stop"])
+        segFlow.selectedSegmentIndex = 0
         addSubview(segFlow)
+        
         segFlow.translatesAutoresizingMaskIntoConstraints = false
         segFlow.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         segFlow.topAnchor.constraint(equalTo: sideBtn.topAnchor).isActive = true
         segFlow.widthAnchor.constraint(equalToConstant: 150).isActive = true
         segFlow.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        
-        segMap = UISegmentedControl(items: ["standard", "satellite"])
-        addSubview(segMap)
-        segMap.translatesAutoresizingMaskIntoConstraints = false
-        
-        segMap.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        segMap.topAnchor.constraint(equalTo: bottomAnchor, constant: -interval*1.5).isActive = true
-        segMap.widthAnchor.constraint(equalTo: segFlow.widthAnchor).isActive = true
-        segMap.heightAnchor.constraint(equalTo: segFlow.heightAnchor).isActive = true
-        
     }
+
 }
+
 
 extension UIControl {
     func anchor(top: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
